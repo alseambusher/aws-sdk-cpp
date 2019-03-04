@@ -19,7 +19,7 @@ set(AWS_DEPS_BUILD_DIR "${CMAKE_BINARY_DIR}/build" CACHE PATH "Dependencies buil
 set(AWS_DEPS_DOWNLOAD_DIR "${AWS_DEPS_BUILD_DIR}/downloads" CACHE PATH "Dependencies download directory.")
 
 set(AWS_C_COMMON_URL "https://github.com/alseambusher/aws-c-common.git")
-set(AWS_C_COMMON_TAG "4afaec0f51c3a7ecec3d7006c32fd734a00b1b5d")
+set(AWS_C_COMMON_TAG "63356dd3412296b29bf5781126a5c4776e02cbb8")
 include(BuildAwsCCommon)
 
 set(AWS_CHECKSUMS_URL "https://github.com/alseambusher/aws-checksums.git")
