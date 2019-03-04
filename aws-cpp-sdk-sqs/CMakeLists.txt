@@ -1,5 +1,6 @@
 add_project(aws-cpp-sdk-sqs "C++ SDK for the AWS sqs service" aws-cpp-sdk-core)
-
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -stdlib=libc++ -Wno-return-type-c-linkage -Wno-unneeded-internal-declaration")
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++14 -fno-strict-aliasing")
 file(GLOB AWS_SQS_HEADERS
     "include/aws/sqs/*.h"
 )
