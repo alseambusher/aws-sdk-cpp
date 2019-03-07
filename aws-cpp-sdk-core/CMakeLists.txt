@@ -1,5 +1,6 @@
 add_project(aws-cpp-sdk-core "Core http and utility library for the AWS C++ SDK")
-
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -stdlib=libc++ -Wno-return-type-c-linkage -Wno-unneeded-internal-declaration")
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++14 -fno-strict-aliasing")
 if(VERSION_STRING)
     set(AWSSDK_VERSION_STRING ${VERSION_STRING})
     message(STATUS "Updating version info to ${VERSION_STRING}")
