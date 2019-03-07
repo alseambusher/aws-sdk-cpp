@@ -7,6 +7,9 @@ add_project(aws-cpp-sdk-cognitoidentity-integration-tests
     aws-cpp-sdk-core 
 )
 
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -stdlib=libc++ -Wno-return-type-c-linkage -Wno-unneeded-internal-declaration")
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++14 -fno-strict-aliasing")
+
 # Headers are included in the source so that they show up in Visual Studio.
 # They are included elsewhere for consistency.
 
