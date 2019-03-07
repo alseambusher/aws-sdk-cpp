@@ -16,6 +16,8 @@
 add_project(testing-resources 
     "Testing utility library for the AWS C++ SDK"
     aws-cpp-sdk-core)
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -stdlib=libc++ -Wno-return-type-c-linkage -Wno-unneeded-internal-declaration")
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++14 -fno-strict-aliasing")
 
 include(GenerateExportHeader)
 
